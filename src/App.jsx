@@ -1,5 +1,5 @@
 import React from 'react'
-import navbar from './component/navbar'
+import navbar from './components/navbar'
 
 function App() {
   return (
