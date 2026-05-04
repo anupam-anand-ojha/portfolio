@@ -4,6 +4,8 @@ import hero from './components/hero'
 import about from './components/about'
 import projects from './components/projects'
 import footer from './components/footer'
+import textRotate from './components/textRotate'
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
    <navbar/>
    <hero/>
    <about/> 
+   <textRotate/>
    <projects/>
    <footer/>
   
