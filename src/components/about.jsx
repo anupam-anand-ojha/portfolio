@@ -1,6 +1,6 @@
 import React from 'react'
 
-function about() {
+function About() {
   return (
    <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
@@ -50,4 +50,4 @@ function about() {
   )
 }
 
-export default about
+export default About
