@@ -1,6 +1,6 @@
 import React from 'react'
 
-function textRotate() {
+function TextRotate() {
   return (
     <span className="text-rotate text-7xl">
   <span className="justify-items-center">
@@ -15,4 +15,4 @@ function textRotate() {
   )
 }
 
-export default textRotate
+export default TextRotate
