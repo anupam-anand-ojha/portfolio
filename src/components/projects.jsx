@@ -2,7 +2,7 @@ import React from 'react'
 
 function Projects() {
   return (
-    <div>
+    <div className="flex flex-wrap justify-center items-center gap-10 min-h-screen">
         
         <div className="hover-3d">
   {/* content */}
@@ -65,36 +65,7 @@ function Projects() {
   <div></div>
   <div></div>
 </div>
-<div className="hover-3d">
-  {/* content */}
-  <figure className="w-60 rounded-2xl">
-    <img src="https://img.daisyui.com/images/stock/card-3.webp?x" alt="Tailwind CSS 3D hover" />
-  </figure>
-  {/* 8 empty divs needed for the 3D effect */}
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
-<div className="hover-3d">
-  {/* content */}
-  <figure className="w-60 rounded-2xl">
-    <img src="https://img.daisyui.com/images/stock/card-3.webp?x" alt="Tailwind CSS 3D hover" />
-  </figure>
-  {/* 8 empty divs needed for the 3D effect */}
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
+
 
 </div>
   )
