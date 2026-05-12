@@ -2,7 +2,7 @@ import React from 'react'
 
 function TextRotate() {
   return (
-    <div className='flex items-center justify-center min-h-screen'>
+    <div className='flex items-center justify-center'>
       <span className="text-rotate text-7xl">
         <span className="justify-items-center ">
           <span>FRONTEND</span>
