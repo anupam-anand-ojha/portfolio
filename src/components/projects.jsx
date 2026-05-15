@@ -2,70 +2,70 @@ import React from 'react'
 
 function Projects() {
   return (
-    <div className="flex flex-wrap justify-center items-center gap-10 min-h-screen">
-        
-        <div className="hover-3d">
-  {/* content */}
-  <figure className="w-60 rounded-2xl">
-    <img src="https://img.daisyui.com/images/stock/card-1.webp?x" alt="Tailwind CSS 3D card" />
-  </figure>
-  {/* 8 empty divs needed for the 3D effect */}
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
+ <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
 
-<div className="hover-3d">
-  {/* content */}
-  <figure className="w-60 rounded-2xl">
-    <img src="https://img.daisyui.com/images/stock/card-2.webp?x" alt="Tailwind CSS 3D hover" />
-  </figure>
-  {/* 8 empty divs needed for the 3D effect */}
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  
-</div>
+  {/* CARD 1 */}
+  <div className="hover-3d">
+    <figure className="max-w-100 rounded-5xl relative">
+      <img src="https://img.daisyui.com/images/stock/creditcard.webp" alt="3D card" />
 
-<div className="hover-3d">
-  {/* content */}
-  <figure className="w-60 rounded-2xl">
-    <img src="https://img.daisyui.com/images/stock/card-3.webp?x" alt="Tailwind CSS 3D hover" />
-  </figure>
-  {/* 8 empty divs needed for the 3D effect */}
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
-<div className="hover-3d">
-  {/* content */}
-  <figure className="w-60 rounded-2xl">
-    <img src="https://img.daisyui.com/images/stock/card-3.webp?x" alt="Tailwind CSS 3D hover" />
-  </figure>
-  {/* 8 empty divs needed for the 3D effect */}
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
+      <div className="absolute bottom-0 left-0 p-4 text-white bg-black/50 w-full rounded-b-2xl">
+        <h2 className="font-bold text-lg">Flashcard Quiz App</h2>
+        <p className="text-sm mb-3">
+          MERN stack based quiz platform with AI-powered feedback.
+        </p>
+        <div className="flex gap-2">
+          <button className="btn btn-xs btn-outline text-white border-white">Code</button>
+          <button className="btn btn-xs btn-primary">Live</button>
+        </div>
+      </div>
+    </figure>
 
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+  </div>
+
+  {/* CARD 2 */}
+  <div className="hover-3d">
+    <figure className="max-w-100 rounded-2xl relative">
+      <img src="https://img.daisyui.com/images/stock/photo-1492724441997-5dc865305da7.webp" alt="3D card" />
+
+      <div className="absolute bottom-0 left-0 p-4 text-white bg-black/50 w-full rounded-b-2xl">
+        <h2 className="font-bold text-lg">E-Commerce Platform</h2>
+        <p className="text-sm mb-3">
+          Full-stack shopping app with secure payments and admin dashboard.
+        </p>
+        <div className="flex gap-2">
+          <button className="btn btn-xs btn-outline text-white border-white">Code</button>
+          <button className="btn btn-xs btn-primary">Live</button>
+        </div>
+      </div>
+    </figure>
+
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+  </div>
+
+  {/* CARD 3 */}
+  <div className="hover-3d">
+    <figure className="max-w-100 rounded-2xl relative">
+      <img src="https://img.daisyui.com/images/stock/photo-1556745757-8d76bdb6984b.webp" alt="3D card" />
+
+      <div className="absolute bottom-0 left-0 p-4 text-white bg-black/50 w-full rounded-b-2xl">
+        <h2 className="font-bold text-lg">AI Resume Builder</h2>
+        <p className="text-sm mb-3">
+          Generate professional resumes using AI with PDF export feature.
+        </p>
+        <div className="flex gap-2">
+          <button className="btn btn-xs btn-outline text-white border-white">Code</button>
+          <button className="btn btn-xs btn-primary">Live</button>
+        </div>
+      </div>
+    </figure>
+
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+  </div>
 
 </div>
   )
