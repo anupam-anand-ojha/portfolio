@@ -1,8 +1,49 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function About() {
+  const aboutRef = useRef();
+
+  useGSAP(() => {
+    gsap.from(".about-image", {
+      scrollTrigger: {
+        trigger: aboutRef.current,
+        start: "top 70%",
+      },
+      x: 100,
+      opacity: 0,
+      duration: 1.2,
+    });
+
+    gsap.from(".about-content", {
+      scrollTrigger: {
+        trigger: aboutRef.current,
+        start: "top 70%",
+      },
+      y: 60,
+      opacity: 0,
+      duration: 1,
+    });
+
+    gsap.from(".about-card", {
+      scrollTrigger: {
+        trigger: aboutRef.current,
+        start: "top 60%",
+      },
+      y: 80,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+    });
+  }, { scope: aboutRef });
+
   return (
     <section
+      ref={aboutRef}
       id="about"
       className="hero bg-base-100 min-h-screen py-20"
     >
@@ -10,17 +51,17 @@ function About() {
 
         {/* IMAGE */}
 
-        <div className="flex-1">
+        <div className="flex-1 about-image">
           <img
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900"
-            alt="developer workspace"
+            alt="Developer Workspace"
             className="rounded-3xl shadow-2xl w-full max-w-lg mx-auto"
           />
         </div>
 
         {/* CONTENT */}
 
-        <div className="flex-1">
+        <div className="flex-1 about-content">
 
           <div className="badge badge-primary badge-lg mb-6">
             About Me
@@ -44,32 +85,30 @@ function About() {
             authentication systems, role-based access control,
             real-time communication using Socket.IO,
             REST APIs, MongoDB database design,
-            and deploying full-stack applications.
+            and deploying production-ready applications.
           </p>
 
           <p className="pb-10 text-base-content/70">
             Most of my learning comes from building projects.
-            Whether it's an AI Resume Builder,
-            a Role-Based Music Platform,
-            or a Real-Time Chat Application,
-            I love turning complex ideas into
-            scalable web experiences.
+            Whether it's Resumify, Muzeek or ChatBeez,
+            I love turning ideas into scalable web experiences
+            that solve real-world problems.
           </p>
 
           {/* HIGHLIGHTS */}
 
           <div className="grid grid-cols-2 gap-4 mb-10">
 
-            <div className="card bg-base-200">
+            <div className="card bg-base-200 about-card">
               <div className="card-body">
                 <h3 className="font-bold text-2xl text-primary">
                   3+
                 </h3>
-                <p>Major Projects</p>
+                <p>Featured Projects</p>
               </div>
             </div>
 
-            <div className="card bg-base-200">
+            <div className="card bg-base-200 about-card">
               <div className="card-body">
                 <h3 className="font-bold text-2xl text-secondary">
                   MERN
@@ -78,16 +117,16 @@ function About() {
               </div>
             </div>
 
-            <div className="card bg-base-200">
+            <div className="card bg-base-200 about-card">
               <div className="card-body">
                 <h3 className="font-bold text-2xl text-accent">
                   AI
                 </h3>
-                <p>Integrated Applications</p>
+                <p>AI Integration</p>
               </div>
             </div>
 
-            <div className="card bg-base-200">
+            <div className="card bg-base-200 about-card">
               <div className="card-body">
                 <h3 className="font-bold text-2xl">
                   Socket.IO
@@ -103,6 +142,7 @@ function About() {
           </button>
 
         </div>
+
       </div>
     </section>
   );
