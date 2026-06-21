@@ -6,6 +6,7 @@ import TextRotate from './components/textRotate'
 import Projects from './components/projects'
 import Footer from './components/footer'
 import Contact from './components/contact'
+import Skills from './components/Skills'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
    <Hero/>
    <About/> 
    <TextRotate/>
+   <Skills/>
    <Projects/>
    <Contact/>
    <Footer/>
