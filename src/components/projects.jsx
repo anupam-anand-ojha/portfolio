@@ -1,140 +1,111 @@
-import React from 'react'
+import React from "react";
 
 function Projects() {
+  const projects = [
+    {
+      title: "Resumify",
+      image:
+        "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900",
+      desc:
+        "AI-powered resume builder that generates professional resumes from user inputs using AI integration.",
+      tech:
+        "React • Node.js • MongoDB • Express • AI API",
+    },
+
+    {
+      title: "Muzeek",
+      image:
+        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=900",
+      desc:
+        "Role-based music platform where artists upload songs and users enjoy seamless streaming.",
+      tech:
+        "React • Express • MongoDB • JWT Authentication",
+    },
+
+    {
+      title: "ChatBeez",
+      image:
+        "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=900",
+      desc:
+        "Real-time chat application powered by Socket.IO with instant messaging capabilities.",
+      tech:
+        "React • Node.js • Socket.IO • MongoDB",
+    },
+  ];
+
   return (
- <div className='min-h-screen'>
- <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    <section
+      id="projects"
+      className="min-h-screen bg-base-100 py-24"
+    >
+      <div className="max-w-7xl mx-auto px-6">
 
-  {/* CARD 1 */}
-  <div className="hover-3d">
-    <figure className="max-w-100 rounded-5xl relative">
-      <img src="https://img.daisyui.com/images/stock/creditcard.webp" alt="3D card" />
+        <div className="text-center mb-16">
 
-      <div className="absolute bottom-0 left-0 p-4 text-white bg-black/50 w-full rounded-b-2xl">
-        <h2 className="font-bold text-lg">Flashcard Quiz App</h2>
-        <p className="text-sm mb-3">
-          MERN stack based quiz platform with AI-powered feedback.
-        </p>
-        <div className="flex gap-2">
-          <button className="btn btn-xs btn-outline text-white border-white">Code</button>
-          <button className="btn btn-xs btn-primary">Live</button>
+          <div className="badge badge-primary badge-lg mb-6">
+            Projects
+          </div>
+
+          <h2 className="text-5xl lg:text-6xl font-black">
+            Featured Projects
+          </h2>
+
+          <p className="mt-6 text-base-content/70">
+            Some of the applications I've built.
+          </p>
+
         </div>
-      </div>
-    </figure>
 
-    <div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div>
-  </div>
+        <div className="grid lg:grid-cols-3 gap-8">
 
-  {/* CARD 2 */}
-  <div className="hover-3d">
-     <figure className="max-w-100 rounded-5xl relative">
-       <img src="https://img.daisyui.com/images/stock/creditcard.webp" alt="3D card" />
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="card bg-base-200 shadow-xl"
+            >
+              <figure>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-60 w-full object-cover"
+                />
+              </figure>
 
-      <div className="absolute bottom-0 left-0 p-4 text-white bg-black/50 w-full rounded-b-2xl">
-        <h2 className="font-bold text-lg">E-Commerce Platform</h2>
-        <p className="text-sm mb-3">
-          Full-stack shopping app with secure payments and admin dashboard.
-        </p>
-        <div className="flex gap-2">
-          <button className="btn btn-xs btn-outline text-white border-white">Code</button>
-          <button className="btn btn-xs btn-primary">Live</button>
+              <div className="card-body">
+
+                <h2 className="card-title">
+                  {project.title}
+                </h2>
+
+                <p className="text-base-content/70">
+                  {project.desc}
+                </p>
+
+                <div className="badge badge-outline mt-2">
+                  {project.tech}
+                </div>
+
+                <div className="card-actions justify-end mt-4">
+
+                  <button className="btn btn-outline btn-sm">
+                    GitHub
+                  </button>
+
+                  <button className="btn btn-primary btn-sm">
+                    Live Demo
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          ))}
+
         </div>
+
       </div>
-    </figure>
-
-    <div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div>
-  </div>
-
-  {/* CARD 3 */}
-  <div className="hover-3d">
-     <figure className="max-w-100 rounded-5xl relative">
-       <img src="https://img.daisyui.com/images/stock/creditcard.webp" alt="3D card" />
-
-
-      <div className="absolute bottom-0 left-0 p-4 text-white bg-black/50 w-full rounded-b-2xl">
-        <h2 className="font-bold text-lg">AI Resume Builder</h2>
-        <p className="text-sm mb-3">
-          Generate professional resumes using AI with PDF export feature.
-        </p>
-        <div className="flex gap-2">
-          <button className="btn btn-xs btn-outline text-white border-white">Code</button>
-          <button className="btn btn-xs btn-primary">Live</button>
-        </div>
-      </div>
-    </figure>
-
-    <div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div>
-  </div>
-  {/* CARD 4 */}
-  <div className="hover-3d">
-     <figure className="max-w-100 rounded-5xl relative">
-       <img src="https://img.daisyui.com/images/stock/creditcard.webp" alt="3D card" />
-
-
-      <div className="absolute bottom-0 left-0 p-4 text-white bg-black/50 w-full rounded-b-2xl">
-        <h2 className="font-bold text-lg">AI Resume Builder</h2>
-        <p className="text-sm mb-3">
-          Generate professional resumes using AI with PDF export feature.
-        </p>
-        <div className="flex gap-2">
-          <button className="btn btn-xs btn-outline text-white border-white">Code</button>
-          <button className="btn btn-xs btn-primary">Live</button>
-        </div>
-      </div>
-    </figure>
-
-    <div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div>
-  </div>
-  {/* CARD 5 */}
-  <div className="hover-3d">
-     <figure className="max-w-100 rounded-5xl relative">
-       <img src="https://img.daisyui.com/images/stock/creditcard.webp" alt="3D card" />
-
-
-      <div className="absolute bottom-0 left-0 p-4 text-white bg-black/50 w-full rounded-b-2xl">
-        <h2 className="font-bold text-lg">AI Resume Builder</h2>
-        <p className="text-sm mb-3">
-          Generate professional resumes using AI with PDF export feature.
-        </p>
-        <div className="flex gap-2">
-          <button className="btn btn-xs btn-outline text-white border-white">Code</button>
-          <button className="btn btn-xs btn-primary">Live</button>
-        </div>
-      </div>
-    </figure>
-
-    <div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div>
-  </div>
-  {/* CARD 6 */}
-  <div className="hover-3d">
-     <figure className="max-w-100 rounded-5xl relative">
-       <img src="https://img.daisyui.com/images/stock/creditcard.webp" alt="3D card" />
-
-
-      <div className="absolute bottom-0 left-0 p-4 text-white bg-black/50 w-full rounded-b-2xl">
-        <h2 className="font-bold text-lg">AI Resume Builder</h2>
-        <p className="text-sm mb-3">
-          Generate professional resumes using AI with PDF export feature.
-        </p>
-        <div className="flex gap-2">
-          <button className="btn btn-xs btn-outline text-white border-white">Code</button>
-          <button className="btn btn-xs btn-primary">Live</button>
-        </div>
-      </div>
-    </figure>
-
-    <div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div>
-  </div>
-
-</div>
-</div>
-  )
+    </section>
+  );
 }
 
-export default Projects
+export default Projects;
