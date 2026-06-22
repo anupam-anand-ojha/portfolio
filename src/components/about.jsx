@@ -13,6 +13,7 @@ function About() {
       scrollTrigger: {
         trigger: aboutRef.current,
         start: "top 70%",
+        toggleActions: "play reverse play reverse"
       },
       x: 100,
       opacity: 0,
@@ -23,6 +24,7 @@ function About() {
       scrollTrigger: {
         trigger: aboutRef.current,
         start: "top 70%",
+       toggleActions: "play reverse play reverse"
       },
       y: 60,
       opacity: 0,
@@ -33,6 +35,7 @@ function About() {
       scrollTrigger: {
         trigger: aboutRef.current,
         start: "top 60%",
+        toggleActions: "play reverse play reverse"
       },
       y: 80,
       opacity: 0,
