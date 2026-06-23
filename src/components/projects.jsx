@@ -87,7 +87,7 @@ function Projects() {
 
                 <div className="card-actions justify-end mt-4">
 
-                  <button className="btn btn-outline btn-sm">
+                  <button onClick={() => window.open("https://github.com/anupam-anand-ojha"),"_blank"} className="btn btn-outline btn-sm">
                     GitHub
                   </button>
 
