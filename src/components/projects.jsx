@@ -19,7 +19,7 @@ function Projects() {
       desc:
         "Role-based music platform where artists upload songs and users enjoy seamless streaming.",
       tech:
-        "React • Express • MongoDB • JWT Authentication",
+        "React • Express • MongoDB • JWT Auth",
     },
 
     {
