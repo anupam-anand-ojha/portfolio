@@ -81,7 +81,7 @@ function Hero() {
         <div className="flex-1">
 
           <div className="badge badge-primary badge-lg hero-badge mb-6">
-            Available For Internship
+            Available For Freelance
           </div>
 
           <p className="hero-name text-xl mb-2 text-primary font-semibold">
