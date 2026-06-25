@@ -10,6 +10,7 @@ function Projects() {
         "AI-powered resume builder that generates professional resumes from user inputs using AI integration.",
       tech:
         "React • Node.js • MongoDB • Express • AI API",
+        
     },
 
     {
