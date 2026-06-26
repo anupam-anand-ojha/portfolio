@@ -14,6 +14,12 @@ function Skills() {
     "REST API",
     "Git & GitHub",
     "AI Integration",
+    "GSAP",
+    "Postman ",
+    "Cloudinary",
+    "Render",
+    "Vercel",
+
   ];
 
   return (
