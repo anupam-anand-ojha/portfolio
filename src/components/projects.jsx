@@ -9,7 +9,7 @@ function Projects() {
       desc:
         "AI-powered resume builder that generates professional resumes from user inputs using AI integration.",
       tech: "React • Node.js • MongoDB • Express • AI API",
-      github: "https://github.com/anupam-anand-ojha/Resumify",
+      github: "https://github.com/anupam-anand-ojha/resumify-ai-backend",
       live: "https://getresumify.vercel.app",
     },
 
@@ -20,7 +20,7 @@ function Projects() {
       desc:
         "Role-based music platform where artists upload songs and users enjoy seamless streaming.",
       tech: "React • Express • MongoDB • JWT Auth",
-      github: "https://github.com/anupam-anand-ojha/Muzeek",
+      github: "https://github.com/anupam-anand-ojha/muzeek-app-backend",
       live: "https://playmuzeek.vercel.app",
     },
 
