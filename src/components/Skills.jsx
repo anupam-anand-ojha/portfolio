@@ -23,6 +23,7 @@ function Skills() {
     "Cloudinary",
     "Render",
     "Vercel",
+    "Gemini AI"
 
   ];
 
