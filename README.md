@@ -30,4 +30,4 @@ Feel free to explore, give feedback, or connect with me for collaboration opport
 
 ---
 
-If you like this project, consider giving it a star.
+If you like this project, consider giving it a star
