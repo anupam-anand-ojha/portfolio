@@ -54,7 +54,7 @@ function Skills() {
           trigger: "#skills",
           start: "top 75%",
           end: "bottom 20%",
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play reset play reset",
         },
       });
     },
