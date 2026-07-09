@@ -83,7 +83,7 @@ function Contact() {
               />
 
               <button className="btn btn-primary">
-                Send Message
+                Send Messages
               </button>
 
             </div>
