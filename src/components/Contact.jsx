@@ -19,7 +19,7 @@ function Contact() {
           </h2>
 
           <p className="mt-6 text-base-content/70">
-            Open for internships, freelance projects,
+            Open for freelance projects,
             and collaboration opportunities.
           </p>
 
