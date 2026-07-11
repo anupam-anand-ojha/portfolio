@@ -5,7 +5,7 @@ function Projects() {
     {
       title: "Resumify",
       image:
-        "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900",
+        "photo2.png",
       desc:
         "AI-powered resume builder that generates professional resumes from user inputs using AI integration.",
       tech: "React • Node.js • MongoDB • Express • AI API",
@@ -15,8 +15,7 @@ function Projects() {
 
     {
       title: "Muzeek",
-      image:
-        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=900",
+      image: "/photo2.png",
       desc:
         "Role-based music platform where artists upload songs and users enjoy seamless streaming.",
       tech: "React • Express • MongoDB • JWT Auth",
