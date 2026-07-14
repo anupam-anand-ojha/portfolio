@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-base-200 py-24"
+      className="min-h-screen bg-base-100 py-24"
     >
       <div className="max-w-7xl mx-auto px-6">
 
@@ -27,7 +27,7 @@ function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-10">
 
-          <div className="card bg-base-100 shadow-xl">
+          <div className="card bg-base-200 shadow-xl">
 
             <div className="card-body">
 
@@ -61,7 +61,7 @@ function Contact() {
 
           </div>
 
-          <div className="card bg-base-100 shadow-xl">
+          <div className="card bg-base-200 shadow-xl">
 
             <div className="card-body">
 
