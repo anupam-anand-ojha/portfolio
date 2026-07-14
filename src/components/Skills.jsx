@@ -65,7 +65,7 @@ function Skills() {
     <section
       ref={container}
       id="skills"
-      className="min-h-screen bg-base-200 py-24"
+      className="min-h-screen bg-base-100 py-24"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
@@ -87,7 +87,7 @@ function Skills() {
           {skills.map((skill) => (
             <div
               key={skill}
-              className="skill-card card bg-base-100 shadow-xl hover:scale-105 transition-all duration-300">
+              className="skill-card card bg-base-200 shadow-xl hover:scale-105 transition-all duration-300">
               <div className="card-body items-center text-center">
                 <h3 className="font-bold text-xl">{skill}</h3>
               </div>
