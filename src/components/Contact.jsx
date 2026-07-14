@@ -2,14 +2,10 @@ import React from "react";
 
 function Contact() {
   return (
-    <section
-      id="contact"
-      className="min-h-screen bg-base-100 py-24"
-    >
+    <section id="contact" className="min-h-screen bg-base-100 py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-16">
-
           <div className="badge badge-primary badge-lg mb-6">
             Contact
           </div>
@@ -18,76 +14,81 @@ function Contact() {
             Let's Work Together
           </h2>
 
-          <p className="mt-6 text-base-content/70">
-            Open for freelance projects,
-            and collaboration opportunities.
+          <p className="mt-6 text-base-content/70 max-w-2xl mx-auto">
+            Open for internships, freelance projects, and collaboration opportunities.
           </p>
-
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10">
 
-          <div className="card bg-base-200 shadow-xl">
+          {/* Contact Info */}
+          <div className="card glass bg-base-100/20 border border-white/20 backdrop-blur-2xl shadow-2xl hover:-translate-y-2 transition-all duration-300">
+            <div className="card-body p-8">
 
-            <div className="card-body">
-
-              <h3 className="card-title text-2xl">
+              <h3 className="card-title text-3xl mb-6">
                 Contact Information
               </h3>
 
-              <p>
-                Email:
-                <br />
-                <strong>
-                  theanupamojha999@gmail.com
-                </strong>
-              </p>
+              <div className="space-y-6">
 
-              <p>
-                Location:
-                <br />
-                <strong>India</strong>
-              </p>
+                <div>
+                  <p className="text-sm opacity-70 uppercase">
+                    Email
+                  </p>
+                  <p className="font-semibold text-lg">
+                    theanupamojha999@gmail.com
+                  </p>
+                </div>
 
-              <p>
-                Availability:
-                <br />
-                <strong>
-                  Open For Internship & Freelance
-                </strong>
-              </p>
+                <div>
+                  <p className="text-sm opacity-70 uppercase">
+                    Location
+                  </p>
+                  <p className="font-semibold text-lg">
+                    India
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-sm opacity-70 uppercase">
+                    Availability
+                  </p>
+                  <p className="font-semibold text-lg">
+                    Open For Internship & Freelance
+                  </p>
+                </div>
+
+              </div>
 
             </div>
-
           </div>
 
-          <div className="card bg-base-200 shadow-xl">
-
-            <div className="card-body">
+          {/* Contact Form */}
+          <div className="card glass bg-base-100/20 border border-white/20 backdrop-blur-2xl shadow-2xl hover:-translate-y-2 transition-all duration-300">
+            <div className="card-body p-8">
 
               <input
                 type="text"
                 placeholder="Your Name"
-                className="input input-bordered"
+                className="input input-bordered w-full bg-white/20 border-white/20 backdrop-blur-md"
               />
 
               <input
                 type="email"
                 placeholder="Email Address"
-                className="input input-bordered"
+                className="input input-bordered w-full bg-white/20 border-white/20 backdrop-blur-md"
               />
 
               <textarea
-                className="textarea textarea-bordered h-40"
-                placeholder="Message"
+                placeholder="Your Message"
+                className="textarea textarea-bordered h-40 w-full bg-white/20 border-white/20 backdrop-blur-md"
               />
 
-              <button className="btn btn-primary">
-                Send Messages
+              <button className="btn btn-primary w-full">
+                Send Message
               </button>
 
             </div>
-
           </div>
 
         </div>

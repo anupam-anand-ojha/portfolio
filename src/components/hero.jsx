@@ -73,7 +73,7 @@ function Hero() {
     <section
       ref={heroRef}
       id="home"
-      className="bg-base-200 min-h-screen flex items-center"
+      className="bg-base-100 min-h-screen flex items-center"
     >
       <div className="max-w-7xl mx-auto w-full px-6 pt-20 flex flex-col lg:flex-row items-center justify-between gap-12">
 
