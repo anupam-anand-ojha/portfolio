@@ -11,7 +11,6 @@ function Projects() {
       github: "https://github.com/anupam-anand-ojha/resumify-ai-backend",
       live: "https://getresumify.vercel.app",
     },
-
     {
       title: "Muzeek",
       image: "/photo2.png",
@@ -21,7 +20,6 @@ function Projects() {
       github: "https://github.com/anupam-anand-ojha/muzeek-app-backend",
       live: "https://playmuzeek.vercel.app",
     },
-
     {
       title: "ChatBeez",
       image:
@@ -55,42 +53,40 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="card bg-base-200 shadow-xl"
+              className="card bg-base-100/10 backdrop-blur-xl border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.35)] hover:-translate-y-3 hover:shadow-primary/20 hover:border-primary/40 transition-all duration-500 overflow-hidden group"
             >
-              <figure>
+              <figure className="overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-60 w-full object-cover"
+                  className="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </figure>
 
               <div className="card-body">
-                <h2 className="card-title">{project.title}</h2>
+                <h2 className="card-title text-2xl font-bold">
+                  {project.title}
+                </h2>
 
-                <p className="text-base-content/70">
+                <p className="text-base-content/70 leading-7">
                   {project.desc}
                 </p>
 
-                <div className="badge badge-outline mt-2">
+                <div className="badge badge-outline mt-2 py-4 px-4">
                   {project.tech}
                 </div>
 
-                <div className="card-actions justify-end mt-4">
+                <div className="card-actions justify-end mt-6">
                   <button
-                    onClick={() =>
-                      window.open(project.github, "_blank")
-                    }
-                    className="btn btn-outline btn-sm"
+                    onClick={() => window.open(project.github, "_blank")}
+                    className="btn btn-outline btn-sm hover:scale-105 transition"
                   >
                     GitHub
                   </button>
 
                   <button
-                    onClick={() =>
-                      window.open(project.live, "_blank")
-                    }
-                    className="btn btn-primary btn-sm"
+                    onClick={() => window.open(project.live, "_blank")}
+                    className="btn btn-primary btn-sm hover:scale-105 transition"
                   >
                     Live Demo
                   </button>
