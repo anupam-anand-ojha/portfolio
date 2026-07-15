@@ -22,8 +22,7 @@ function Projects() {
     },
     {
       title: "ChatBeez",
-      image:
-        "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=900",
+      image:"/photo3.png",
       desc:
         "Real-time chat application powered by Socket.IO with instant messaging capabilities.",
       tech: "React • Node.js • Socket.IO • MongoDB",
