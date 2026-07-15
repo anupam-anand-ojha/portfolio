@@ -31,11 +31,16 @@ html{
   --radius-box: 0rem;
 }
 body {
-  background: linear-gradient(
-    135deg,
-    #fafaf5 0%,
-    #eef3e4 30%,
-    #dde8d0 70%,
-    #c7d7b5 100%
-  );
+  background:
+    radial-gradient(circle at 15% 20%, #dbe9c8 0%, transparent 35%),
+    radial-gradient(circle at 85% 80%, #c7d9b4 0%, transparent 30%),
+    linear-gradient(
+      145deg,
+      #fcfcfa,
+      #f4f7ef,
+      #e5ecdc,
+      #d2ddc2
+    );
+
+  background-attachment: fixed;
 }
