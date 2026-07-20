@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 function Contact() {
+  const container = useRef(); 
+
+useGSAP(() => {
+  // Heading 
+gsap.from(".contact-heading", {
+  scrollTrigger: {
+    trigger: container.current,
+    start: "top 80%",
+    toggleActions: "play reverse play reverse",
+  },
+  y: 60,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+});
+ }, {scope: container});
+
+
   return (
-    <section id="contact" className="min-h-screen bg-base-100 py-24">
+    <section id="contact"
+      ref={container}
+     className="min-h-screen bg-base-100 py-24">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center mb-16">
+        <div className=" contact-heading text-center mb-16">
           <div className="badge badge-primary badge-lg mb-6">
             Contact
           </div>
@@ -14,7 +40,7 @@ function Contact() {
             Let's Work Together
           </h2>
 
-          <p className="mt-6 text-base-content/70 max-w-2xl mx-auto">
+          <p className=" contact-heading mt-6 text-base-content/70 max-w-2xl mx-auto">
             Open for internships, freelance projects, and collaboration opportunities.
           </p>
         </div>

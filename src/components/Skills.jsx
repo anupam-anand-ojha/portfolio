@@ -51,29 +51,19 @@ gsap.from(".skills-heading", {
   ease: "power3.out",
 });
   // Cards 
-  const cards = gsap.utils.toArray(".skill-card");
+  gsap.from(".skills-card", {
+       scrollTrigger: {
+         trigger: container.current,
+         start: "top 60%",
+         toggleActions: "play reverse play reverse"
+       },
+       y: 80,
+       opacity: 0,
+       duration: 0.8,
+       stagger: 0.2,
+     });
+   }, { scope: container });
 
-  gsap.set(cards, {
-    opacity: 0,
-    scale: 0.7,
-    y: 50,
-  });
-
-  gsap.to(cards, {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    duration: 2,
-    ease: "back.out(1.7)",
-    stagger: 0.1,
-    scrollTrigger: {
-      trigger: "#skills",
-      start: "top 75%",
-      end: "bottom 20%",
-      toggleActions: "play reset play reset",
-    },
-  });
-}, { scope: container });
 
  return (
   <section
@@ -91,18 +81,18 @@ gsap.from(".skills-heading", {
           Technologies I Use
         </h2>
 
-        <p className=" skills-heading mt-6 text-base-content/70 max-w-2xl mx-auto">
+        <p className=" skills-card card mt-6 text-base-content/70 max-w-2xl mx-auto">
           Tools and technologies I use to build scalable web applications,
           AI-powered products and real-time systems.
         </p>
       </div>
 
       {/* Skills Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className=" skills-card grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {(window.innerWidth < 768 ? visibleSkills : skills).map((skill) => (
           <div
             key={skill}
-            className="skills-heading card bg-base-200 shadow-xl hover:scale-105 transition-all duration-300"
+            className=" bg-base-200 shadow-xl hover:scale-105 transition-all duration-300"
           >
             <div className="card-body items-center text-center">
               <h3 className="font-bold text-xl">{skill}</h3>
