@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-   <div className="navbar fixed top-0 left-0 z-50 w-full bg-black/20 backdrop-blur-xl border-b border-white/10 shadow-lg px-6 lg:px-12">
+   <div className="navbar fixed top-0 left-0 z-50 w-full bg-black-100/80 backdrop-blur-xl border-b border-white/10 shadow-lg px-6 lg:px-12">
       <div className="flex-1">
         <a href="#home" className="text-2xl font-black">
           Anand<span className="text-primary">.</span>
