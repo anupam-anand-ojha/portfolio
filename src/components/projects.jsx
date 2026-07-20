@@ -4,7 +4,7 @@ function Projects() {
   const projects = [
     {
       title: "Resumify",
-      image: "/photo1.png",
+      image: "/p1.png",
       desc:
         "AI-powered resume builder that generates professional resumes from user inputs using AI integration.",
       tech: "React • Node.js • MongoDB • Express • AI API",
@@ -13,7 +13,7 @@ function Projects() {
     },
     {
       title: "Muzeek",
-      image: "/photo2.png",
+      image: "/p2.png",
       desc:
         "Role-based music platform where artists upload songs and users enjoy seamless streaming.",
       tech: "React • Express • MongoDB • JWT Auth",
@@ -22,7 +22,7 @@ function Projects() {
     },
     {
       title: "ChatBeez",
-      image:"/photo3.png",
+      image:"/p3.png",
       desc:
         "Real-time chat application powered by Socket.IO with instant messaging capabilities.",
       tech: "React • Node.js • Socket.IO • MongoDB",
