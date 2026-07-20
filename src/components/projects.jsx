@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
+  const projectRef = useRef();
+
+  useGSAP(() => {
+    gsap.from(".projects-heading", {
+      scrollTrigger: {
+        trigger: ".projects-heading",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
+      y: 60,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+  }, { scope: projectRef });
+
   const projects = [
     {
       title: "Resumify",
@@ -22,7 +43,7 @@ function Projects() {
     },
     {
       title: "ChatBeez",
-      image:"/p3.png",
+      image: "/p3.png",
       desc:
         "Real-time chat application powered by Socket.IO with instant messaging capabilities.",
       tech: "React • Node.js • Socket.IO • MongoDB",
@@ -32,9 +53,14 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="min-h-screen bg-base-100 py-24">
+    <section
+      ref={projectRef}
+      id="projects"
+      className="min-h-screen bg-base-100 py-24"
+    >
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+
+        <div className="projects-heading text-center mb-16">
           <div className="badge badge-primary badge-lg mb-6">
             Projects
           </div>
@@ -78,14 +104,14 @@ function Projects() {
                 <div className="card-actions justify-end mt-6">
                   <button
                     onClick={() => window.open(project.github, "_blank")}
-                    className="btn btn-outline btn-sm hover:scale-105 transition"
+                    className="btn btn-outline btn-sm"
                   >
                     GitHub
                   </button>
 
                   <button
                     onClick={() => window.open(project.live, "_blank")}
-                    className="btn btn-primary btn-sm hover:scale-105 transition"
+                    className="btn btn-primary btn-sm"
                   >
                     Live Demo
                   </button>
@@ -94,6 +120,7 @@ function Projects() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
