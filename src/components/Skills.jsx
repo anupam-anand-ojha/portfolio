@@ -69,7 +69,7 @@ gsap.from(".skills-heading", {
   <section
     ref={container}
     id="skills"
-    className="min-h-auto lg:min-h-screen bg-base-100 py-24"
+    className="min-h-auto lg:min-h-screen bg-base-100 py-20"
   >
     <div className="max-w-7xl mx-auto px-6">
       <div className="skills-heading text-center mb-16">
