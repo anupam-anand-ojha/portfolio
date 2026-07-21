@@ -16,14 +16,14 @@ function Skills() {
     "Node.js",
     "Express.js",
     "MongoDB",
-    "Redux Toolkit",
+    "REST API",
     "CRUD",
     "Tailwind CSS",
     "DaisyUI",
     "Socket.IO",
     "WebSockets",
     "JWT Auth",
-    "REST API",
+    "Redux Toolkit",
     "Git & GitHub",
     "AI Integration",
     "OpenAI API",
@@ -69,7 +69,7 @@ gsap.from(".skills-heading", {
   <section
     ref={container}
     id="skills"
-    className="min-h-screen bg-base-100 py-24"
+    className="min-h-auto lg:min-h-screen bg-base-100 py-24"
   >
     <div className="max-w-7xl mx-auto px-6">
       <div className="skills-heading text-center mb-16">
@@ -88,7 +88,7 @@ gsap.from(".skills-heading", {
       </div>
 
       {/* Skills Grid */}
-      <div className=" skills-card grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className=" skills-card grid grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
         {(window.innerWidth < 768 ? visibleSkills : skills).map((skill) => (
           <div
             key={skill}

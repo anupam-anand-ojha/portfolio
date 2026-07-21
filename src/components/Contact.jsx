@@ -20,8 +20,20 @@ gsap.from(".contact-heading", {
   y: 60,
   opacity: 0,
   duration: 1,
-  ease: "power3.out",
+  ease: "power1.out",
 });
+
+gsap.from(".contact-card", {
+      scrollTrigger: {
+        trigger: container.current,
+        start: "top 70%",
+        toggleActions: "play reverse play reverse"
+      },
+      x: 100,
+      opacity: 0,
+      duration: 1.2,
+    });
+
  }, {scope: container});
 
 
@@ -31,7 +43,7 @@ gsap.from(".contact-heading", {
      className="min-h-screen bg-base-100 py-24">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className=" contact-heading text-center mb-16">
+        <div className=" contact-card text-center mb-16">
           <div className="badge badge-primary badge-lg mb-6">
             Contact
           </div>
@@ -48,7 +60,7 @@ gsap.from(".contact-heading", {
         <div className="grid lg:grid-cols-2 gap-10">
 
           {/* Contact Info */}
-          <div className="card glass bg-base-100/20 border border-white/20 backdrop-blur-2xl shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div className="contact-heading card glass bg-base-100/20 border border-white/20 backdrop-blur-2xl shadow-2xl hover:-translate-y-2 transition-all duration-300">
             <div className="card-body p-8">
 
               <h3 className="card-title text-3xl mb-6">
@@ -90,7 +102,7 @@ gsap.from(".contact-heading", {
           </div>
 
           {/* Contact Form */}
-          <div className="card glass bg-base-100/20 border border-white/20 backdrop-blur-2xl shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div className=" contact-heading card glass bg-base-100/20 border border-white/20 backdrop-blur-2xl shadow-2xl hover:-translate-y-2 transition-all duration-300">
             <div className="card-body p-8">
 
               <input
