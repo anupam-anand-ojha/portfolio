@@ -13,10 +13,10 @@ function Skills() {
   const skills = [
     "React.js",
     "JavaScript",
-    "Node.js",
+    "REST API",
     "Express.js",
     "MongoDB",
-    "REST API",
+    "Node.js",
     "CRUD",
     "Tailwind CSS",
     "DaisyUI",

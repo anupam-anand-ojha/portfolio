@@ -1,12 +1,13 @@
-import React from 'react'
-import Navbar from './components/navbar'
-import Hero from './components/hero'
-import About from './components/About'
-import TextRotate from './components/textRotate'
-import Projects from './components/projects'
-import Footer from './components/footer'
-import Contact from './components/contact'
-import Skills from './components/Skills'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import TextRotate from "./components/TextRotate";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import Skills from "./components/Skills";
+
 
 
 function App() {
