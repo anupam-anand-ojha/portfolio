@@ -30,7 +30,7 @@ function Navbar() {
       <div className="hidden md:block">
 
         <a
-          href="/resume.pdf"
+          href="/my.pdf"
           target="_blank"
           className="btn btn-primary"
         >

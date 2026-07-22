@@ -105,11 +105,12 @@ function Hero() {
         </p>
 
         <div className="hero-buttons flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto">
-          <button className="btn btn-primary btn-md sm:btn-lg">
-            View Projects
-          </button>
+          <a href="#projects" className="btn btn-primary btn-md sm:btn-lg">View Projects</a>
+            
+          
 
-          <button className="btn btn-outline btn-md sm:btn-lg">
+          <button onClick={()=> window.open("./my.pdf", "blank")}
+           className="btn btn-outline btn-md sm:btn-lg">
             Download Resume
           </button>
         </div>

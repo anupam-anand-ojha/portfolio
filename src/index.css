@@ -1,12 +1,5 @@
 @import "tailwindcss";
 @import "daisyui/daisyui.css";
-html{
-  scroll-behavior:smooth;
-}
-
-
-
-
 
 @plugin "daisyui/theme" {
   name: "dark";
@@ -43,8 +36,9 @@ html{
   --noise: 0;
 }
 
-
-
+html{
+  scroll-behavior:smooth;
+}
 
 
 body {
@@ -62,3 +56,4 @@ body {
 
   background-attachment: fixed;
 }
+
