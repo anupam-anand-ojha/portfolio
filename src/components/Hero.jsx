@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
+
+const handlesubmit = () => { window.open("https://drive.google.com/file/d/1GkyDKo3ugAD4pT3txFDwyutGielgr163/view?usp=sharing", "_blank")
+}
 function Hero() {
   const heroRef = useRef();
 
@@ -109,7 +112,7 @@ function Hero() {
             
           
 
-          <button onClick={()=> window.open("./my.pdf", "blank")}
+          <button onClick={handlesubmit}
            className="btn btn-outline btn-md sm:btn-lg">
             Download Resume
           </button>
