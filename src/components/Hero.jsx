@@ -169,7 +169,7 @@ function Hero() {
           <div className="absolute inset-0 blur-3xl bg-primary/20 rounded-full"></div>
 
           <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+            src="./A1"
             alt="developer"
             className="relative z-10 w-[350px] lg:w-[450px] rounded-3xl shadow-2xl"
           />
