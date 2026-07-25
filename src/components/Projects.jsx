@@ -20,6 +20,7 @@ function Projects() {
       duration: 1,
       ease: "power3.out",
     });
+    
   }, { scope: projectRef });
 
   const projects = [
