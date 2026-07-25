@@ -91,7 +91,7 @@ function Hero() {
       id="home"
       className="bg-base-100 min-h-screen flex items-center"
     >
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-24 lg:pt-20 flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-24 lg:pt-35 flex flex-col lg:flex-1 flex items-center justify-center gap-12">
         {/* LEFT */}
         <div className="flex-1 w-full">
 
@@ -168,7 +168,7 @@ function Hero() {
               className="relative z-10 w-[350px] lg:w-[450px] rounded-3xl shadow-2xl"
             />
           </div>
-        </div>
+        </div> 
       </div>
     </section>
   );

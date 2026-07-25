@@ -26,7 +26,7 @@ function Navbar() {
 
       {/* Mobile Navbar */}
 
-<div className="md:hidden navbar fixed top-0 left-0 z-50 w-full bg-black/15 backdrop-blur-xl border border-white/10 shadow-lg px-6 ">
+<div className="md:hidden navbar fixed top-0 left-0 z-50 w-full bg-black/15 backdrop-blur-xl border-b border-white/10 shadow-lg px-6 ">
   <div className="flex-1 flex items-center justify-between">
 
     <a href="#home" className="text-2xl font-black">
@@ -45,7 +45,7 @@ function Navbar() {
       {/* Dropdown menu */}
       <ul
             tabIndex={0}
-            className="menu dropdown-content mt-3 w-56 rounded-2xl bg-black/15 backdrop-blur-xl shadow-xl border border-base-content/10 p-2"
+            className="menu dropdown-content mt-3  w-56 rounded-2xl bg-black/15 backdrop-blur-xl shadow-xl border border-base-content/10 p-2"
           >
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
