@@ -91,10 +91,19 @@ function Hero() {
       id="home"
       className="bg-base-100 min-h-screen flex items-center"
     >
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-24 lg:pt-35 flex flex-col lg:flex-1 flex items-center justify-center gap-12">
+      {/* Background */}
+
+      <div className="absolute inset-0 -z-10">
+        <img className="w-full h-full object-cover" src="./Hero.jpg" alt="" />
+
+        {/* Overlay */}
+
+        {/* <div className="absolute inset-0 bg-black/60"></div> */}
+      </div>
+
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-24 lg:pt-35 flex flex-col lg:flex-row item-center justify-between gap-12">
         {/* LEFT */}
         <div className="flex-1 w-full">
-
           <p className="hero-name text-lg sm:text-xl mb-2 text-primary font-semibold">
             Hello, I'm
           </p>
@@ -162,13 +171,13 @@ function Hero() {
           <div className="hero-image relative">
             <div className="absolute inset-0 blur-3xl bg-primary/20 rounded-full"></div>
 
-            <img
+            {/* <img
               src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
               alt="developer"
               className="relative z-10 w-[350px] lg:w-[450px] rounded-3xl shadow-2xl"
-            />
+            /> */}
           </div>
-        </div> 
+        </div>
       </div>
     </section>
   );
