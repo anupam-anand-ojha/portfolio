@@ -70,6 +70,11 @@ function Hero() {
         },
         "-=1"
       );
+      tl.from(".resume-btn", {
+  y: -200, opacity: 0,
+  duration: 0.8, stagger: 0.3,
+  ease: "bounce.out"
+});
   }, { scope: heroRef });
 
   return (
@@ -113,7 +118,7 @@ function Hero() {
           
 
           <button onClick={handlesubmit}
-           className="btn btn-outline btn-md sm:btn-lg">
+           className="resume-btn btn btn-outline btn-md sm:btn-lg">
             Download Resume
           </button>
         </div>
@@ -169,7 +174,7 @@ function Hero() {
           <div className="absolute inset-0 blur-3xl bg-primary/20 rounded-full"></div>
 
           <img
-            src="./A1"
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
             alt="developer"
             className="relative z-10 w-[350px] lg:w-[450px] rounded-3xl shadow-2xl"
           />

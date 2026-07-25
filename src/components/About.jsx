@@ -56,7 +56,7 @@ function About() {
 
         <div className="flex-1 about-image">
           <img
-            src="./A1.png"
+            src="./H1.png"
             alt="Developer Workspace"
             className="rounded-3xl shadow-2xl w-full max-w-lg mx-auto"
           />
