@@ -94,7 +94,7 @@ function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Contact Info */}
-          <div className="contact-info card glass bg-base-100/20 border border-white/20 backdrop-blur-2xl shadow-2xl">
+          <div className="contact-info card  bg-white/10 backdrop-blur-xl  border border-white/20  shadow-2xl">
             <div className="card-body p-8">
               <h3 className="card-title text-3xl mb-6">Contact Information</h3>
 
@@ -125,7 +125,7 @@ function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="contact-form card bg-base-100/20 border border-white/20 backdrop-blur-2xl shadow-2xl">
+          <div className="contact-form card bg-white/10 backdrop-blur-xl border border-white/20 backdrop-blur-2xl shadow-2xl">
             <div className="card-body p-8">
               <form onSubmit={onSubmit} className="space-y-4">
                 <input

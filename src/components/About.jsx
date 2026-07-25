@@ -102,7 +102,7 @@ function About() {
 
           <div className="grid grid-cols-2 gap-4 mb-10">
 
-            <div className="card bg-base-200 about-card">
+            <div className="card bg-white/10 backdrop-blur-xl border border-white/10  about-card">
               <div className="card-body">
                 <h3 className="font-bold text-2xl text-primary">
                   3+
@@ -111,7 +111,7 @@ function About() {
               </div>
             </div>
 
-            <div className="card bg-base-200 about-card">
+            <div className="card bg-white/10 backdrop-blur-xl border border-white/10 about-card">
               <div className="card-body">
                 <h3 className="font-bold text-2xl text-secondary">
                   MERN
@@ -120,7 +120,7 @@ function About() {
               </div>
             </div>
 
-            <div className="card bg-base-200 about-card">
+            <div className="card bg-white/10 backdrop-blur-xl border border-white/10 about-card">
               <div className="card-body">
                 <h3 className="font-bold text-2xl text-accent">
                   AI
@@ -129,7 +129,7 @@ function About() {
               </div>
             </div>
 
-            <div className="card bg-base-200 about-card">
+            <div className="card bg-white/10 backdrop-blur-xl border border-white/10 about-card">
               <div className="card-body">
                 <h3 className="font-bold text-2xl">
                   Socket.IO

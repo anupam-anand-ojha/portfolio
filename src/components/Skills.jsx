@@ -92,7 +92,7 @@ gsap.from(".skills-heading", {
         {(window.innerWidth < 768 ? visibleSkills : skills).map((skill) => (
           <div
             key={skill}
-            className=" bg-base-200 shadow-xl hover:scale-105 transition-all duration-300"
+            className=" bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl hover:scale-105 transition-all duration-300"
           >
             <div className="card-body items-center text-center">
               <h3 className="font-bold text-xl">{skill}</h3>

@@ -79,7 +79,7 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="card bg-black-100/20 backdrop-blur-xl border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.35)] hover:-translate-y-3 hover:shadow-primary/20 hover:border-primary/40 transition-all duration-500 overflow-hidden group"
+              className="card bg-white/10 backdrop-blur-xl  border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.35)] hover:-translate-y-3 hover:shadow-primary/20 hover:border-primary/40 transition-all duration-500 overflow-hidden group"
             >
               <figure className="overflow-hidden">
                 <img

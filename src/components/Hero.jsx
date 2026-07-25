@@ -11,8 +11,7 @@ const handlesubmit = () => {
 function Hero() {
   const heroRef = useRef();
 
-  useGSAP(
-    () => {
+  useGSAP(() => {
       const tl = gsap.timeline();
 
       tl.from(".hero-badge", {
@@ -93,7 +92,7 @@ function Hero() {
     >
       {/* Background */}
 
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 hidden md:block ">
         <img className="w-full h-full object-cover" src="./Hero.jpg" alt="" />
 
         {/* Overlay */}
@@ -138,7 +137,7 @@ function Hero() {
           </div>
 
           {/* STATS */}
-          <div className="hero-stats stats stats-vertical lg:stats-horizontal shadow bg-base-100 mt-16 w-full">
+          <div className="hero-stats stats stats-vertical lg:stats-horizontal shadow bg-white/10 border border-white/10 mt-16 w-full">
             <div className="stat">
               <div className="stat-title">Featured Projects</div>
               <div className="stat-value text-primary text-3xl sm:text-4xl">
