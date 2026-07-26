@@ -93,7 +93,7 @@ function Hero() {
       {/* Background */}
 
       <div className="absolute inset-0 -z-10  md:block ">
-        <img className="w-full h-full object-cover object-[93%_center] lg:object-center" src="./Hero.jpg" alt="" />
+        <img className="w-full h-full object-cover object-[93%_center] lg:object-center " src="./Hero.jpg" alt="" />
 
         {/* Overlay */}
 
