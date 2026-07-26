@@ -113,7 +113,7 @@ function About() {
 
             <div className="card bg-white/10 backdrop-blur-xl border border-white/10 about-card">
               <div className="card-body">
-                <h3 className="font-bold text-2xl text-secondary">
+                <h3 className="font-bold text-2xl text-blue-400">
                   MERN
                 </h3>
                 <p>Full Stack Development</p>
@@ -122,7 +122,7 @@ function About() {
 
             <div className="card bg-white/10 backdrop-blur-xl border border-white/10 about-card">
               <div className="card-body">
-                <h3 className="font-bold text-2xl text-accent">
+                <h3 className="font-bold text-2xl text-purple-400">
                   AI
                 </h3>
                 <p>AI Integration</p>
@@ -131,7 +131,7 @@ function About() {
 
             <div className="card bg-white/10 backdrop-blur-xl border border-white/10 about-card">
               <div className="card-body">
-                <h3 className="font-bold text-2xl">
+                <h3 className="font-bold text-2xl text-green-300">
                   Socket.IO
                 </h3>
                 <p>Real-Time Systems</p>
