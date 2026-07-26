@@ -113,7 +113,7 @@ function Hero() {
             Anupam
           </h1>
 
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mt-4 mb-8 text-base-content/80">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mt-4 mb-8 text-white/60">
             Full Stack Developer & AI Enthusiast
           </h2>
 
