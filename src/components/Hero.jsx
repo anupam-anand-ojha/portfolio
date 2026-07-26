@@ -148,7 +148,7 @@ function Hero() {
 
             <div className="stat">
               <div className="stat-title">Stack</div>
-              <div className="stat-value text-secondary text-3xl sm:text-4xl">
+              <div className="stat-value text-blue-500 text-3xl sm:text-4xl">
                 MERN
               </div>
               <div className="stat-desc">Full Stack Development</div>
@@ -156,7 +156,7 @@ function Hero() {
 
             <div className="stat">
               <div className="stat-title">Specialization</div>
-              <div className="stat-value text-accent text-3xl sm:text-4xl">
+              <div className="stat-value text-pink-400 text-3xl sm:text-4xl">
                 AI
               </div>
               <div className="stat-desc">AI Integration</div>

@@ -140,9 +140,9 @@ function About() {
 
           </div>
 
-          <button className="btn btn-primary btn-lg">
+          <a href="#projects" className="btn btn-primary btn-lg">
             Explore My Projects
-          </button>
+          </a>
 
         </div>
 
