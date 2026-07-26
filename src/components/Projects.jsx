@@ -90,11 +90,11 @@ function Projects() {
               </figure>
 
               <div className="card-body">
-                <h2 className="card-title text-2xl font-bold">
+                <h2 className="card-title  text-2xl font-bold">
                   {project.title}
                 </h2>
 
-                <p className="text-base-content/70 leading-7">
+                <p className="text-white/70 leading-7">
                   {project.desc}
                 </p>
 
