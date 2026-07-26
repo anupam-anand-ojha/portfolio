@@ -92,8 +92,8 @@ function Hero() {
     >
       {/* Background */}
 
-      <div className="absolute inset-0 -z-10 hidden md:block ">
-        <img className="w-full h-full object-cover" src="./Hero.jpg" alt="" />
+      <div className="absolute inset-0 -z-10  md:block ">
+        <img className="w-full h-full object-cover object-[93%_center] lg:object-center" src="./Hero.jpg" alt="" />
 
         {/* Overlay */}
 
@@ -171,7 +171,7 @@ function Hero() {
             <div className="absolute inset-0 blur-3xl bg-primary/20 rounded-full"></div>
 
             {/* <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+              src=""
               alt="developer"
               className="relative z-10 w-[350px] lg:w-[450px] rounded-3xl shadow-2xl"
             /> */}
