@@ -100,7 +100,7 @@ function Hero() {
         {/* <div className="absolute inset-0 bg-black/60"></div> */}
       </div>
 
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-24 lg:pt-35 flex flex-col lg:flex-row item-center justify-between gap-12">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-35 lg:pt-35 flex flex-col lg:flex-row item-center justify-between gap-12">
         {/* LEFT */}
         <div className="flex-1 w-full">
           <p className="hero-name text-lg sm:text-xl mb-2 text-primary font-semibold">
@@ -113,17 +113,17 @@ function Hero() {
             Anupam
           </h1>
 
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mt-4 mb-8 text-white/60">
+          <h2 className=" text-2xl lg:text-3xl font-semibold mt-6 lg:mt-4 mb-8 text-white/60">
             Full Stack Developer & AI Enthusiast
           </h2>
 
-          <p className="hero-desc text-base sm:text-lg text-base-content/70 max-w-2xl">
+          <p className="hero-desc text-xl lg:text-lg text-base-content/70 max-w-2xl">
             I build modern web applications, AI-powered tools, authentication
             systems and real-time platforms using React, Node.js, MongoDB and
             Socket.IO.
           </p>
 
-          <div className="resume-btn flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto">
+          <div className="resume-btn flex flex-col sm:flex-row gap-4 mt-20 lg:mt-10 w-full sm:w-auto">
             <a href="#projects" className="btn btn-primary btn-md sm:btn-lg">
               View Projects
             </a>
@@ -137,7 +137,7 @@ function Hero() {
           </div>
 
           {/* STATS */}
-          <div className="hero-stats stats stats-vertical lg:stats-horizontal shadow bg-white/10 border border-white/10 mt-16 w-full">
+          <div className="hero-stats stats stats-vertical lg:stats-horizontal shadow bg-white/10 border border-white/10 mt-30 lg:mt-16  w-full">
             <div className="stat">
               <div className="stat-title">Featured Projects</div>
               <div className="stat-value text-primary text-3xl sm:text-4xl">
