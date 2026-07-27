@@ -133,7 +133,7 @@ function Contact() {
                   name="name"
                   required
                   placeholder="Your Name"
-                  className="input input-bordered w-full bg-white/20 border-white/20 backdrop-blur-md"
+                  className="input input-bordered w-full bg-white/20 border-white/20 text-white  backdrop-blur-md"
                 />
 
                 <input
@@ -141,14 +141,14 @@ function Contact() {
                   name="email"
                   required
                   placeholder="Email Address"
-                  className="input input-bordered w-full bg-white/20 border-white/20 backdrop-blur-md"
+                  className="input input-bordered w-full bg-white/20 border-white/20 text-white backdrop-blur-md"
                 />
 
                 <textarea
                   name="message"
                   required
                   placeholder="Your Message"
-                  className="textarea textarea-bordered h-40 w-full bg-white/20 border-white/20 backdrop-blur-md"
+                  className="textarea textarea-bordered h-40 w-full bg-white/20 border-white/20 text-white backdrop-blur-md"
                 />
 
                 <button type="submit" className="btn btn-primary w-full">
