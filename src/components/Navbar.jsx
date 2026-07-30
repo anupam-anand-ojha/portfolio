@@ -57,7 +57,7 @@ function Navbar() {
 
             <li>
               <a
-                href="/my.pdf"
+                href="/Anupam_Anand_Ojha_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary btn-sm w-full"
