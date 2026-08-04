@@ -55,7 +55,7 @@ gsap.from(".skills-heading", {
        scrollTrigger: {
          trigger: container.current,
          start: "top 60%",
-         toggleActions: "play none none none"
+         toggleActions: "play reverse play reverse"
        },
        y: 80,
        opacity: 0,
@@ -88,7 +88,7 @@ gsap.from(".skills-heading", {
       </div>
 
       {/* Skills Grid */}
-      <div className=" skills-card grid grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+      <div className="skills-card grid grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
         {(window.innerWidth < 768 ? visibleSkills : skills).map((skill) => (
           <div
             key={skill}
@@ -102,7 +102,7 @@ gsap.from(".skills-heading", {
       </div>
 
       {/* Mobile Only Button */}
-      <div className="md:hidden flex justify-center mt-8">
+      <div className="hidden flex justify-center mt-8">
         <button
           onClick={() => setShowAll(!showAll)}
           className="btn btn-primary rounded-full"
