@@ -35,7 +35,7 @@ function Skills() {
     "Gemini AI",
 
   ];
-   const visibleSkills = showAll ? skills : skills.slice(0, 5);
+   const visibleSkills = showAll ? skills : skills.slice(0, 15);
 
 useGSAP(() => {
   // Heading 
@@ -88,7 +88,7 @@ gsap.from(".skills-heading", {
       </div>
 
       {/* Skills Grid */}
-      <div className="skills-card grid grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+      <div className=" skills-card grid grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
         {(window.innerWidth < 768 ? visibleSkills : skills).map((skill) => (
           <div
             key={skill}
@@ -101,17 +101,7 @@ gsap.from(".skills-heading", {
         ))}
       </div>
 
-      {/* Mobile Only Button */}
-      <div className="hidden flex justify-center mt-8">
-        <button
-          onClick={() => setShowAll(!showAll)}
-          className="btn btn-primary rounded-full"
-        >
-          {showAll
-            ? "Show Less"
-            : `+${skills.length - 5} More Skills`}
-        </button>
-      </div>
+     
     </div>
   </section>
 );
