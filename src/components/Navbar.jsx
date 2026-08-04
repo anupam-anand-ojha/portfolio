@@ -45,7 +45,7 @@ function Navbar() {
       {/* Dropdown menu */}
       <ul
             tabIndex={0}
-            className="menu dropdown-content mt-3  w-56 rounded-2xl bg-white/15 backdrop-blur-xl shadow-xl border border-base-content/10 p-2"
+            className="menu dropdown-content mt-3  w-56 rounded-2xl bg-white/20 backdrop-blur-3xl backdrop-saturate-150 shadow-xl border-t border-base-content/10 p-2"
           >
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
