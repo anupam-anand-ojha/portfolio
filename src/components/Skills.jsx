@@ -55,7 +55,7 @@ gsap.from(".skills-heading", {
        scrollTrigger: {
          trigger: container.current,
          start: "top 60%",
-         toggleActions: "play reverse play reverse"
+         toggleActions: "play none none none"
        },
        y: 80,
        opacity: 0,
