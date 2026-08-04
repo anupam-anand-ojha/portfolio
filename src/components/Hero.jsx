@@ -88,19 +88,19 @@ function Hero() {
     <section
       ref={heroRef}
       id="home"
-      className="bg-base-100 min-h-screen flex items-center"
+      className="relative bg-base-100 min-h-screen flex items-center overflow-hidden"
     >
       {/* Background */}
 
-      <div className="absolute inset-0 -z-10  md:block ">
-        <img className="w-full h-full object-cover object-[93%_center] lg:object-center " src="./Hero.jpg" alt="" />
+      <div className="absolute inset-0 -z-10 overflow-hidden md:block ">
+        <img className="absolute inset-0 w-full h-full object-cover object-[93%_center] lg:object-center " src="./Hero.jpg" alt="" />
 
         {/* Overlay */}
 
         {/* <div className="absolute inset-0 bg-black/60"></div> */}
       </div>
 
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-35 lg:pt-35 flex flex-col lg:flex-row item-center justify-between gap-12">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-35 lg:pt-35 flex flex-col lg:flex-row items-center justify-between gap-12">
         {/* LEFT */}
         <div className="flex-1 w-full">
           <p className="hero-name text-lg sm:text-xl mb-2 text-primary font-semibold">

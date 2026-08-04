@@ -8,6 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 function About() {
   const aboutRef = useRef();
 
+  const isMobile = window.innerWidth < 768;
+
   useGSAP(() => {
     gsap.from(".about-image", {
       scrollTrigger: {
@@ -15,7 +17,7 @@ function About() {
         start: "top 70%",
         toggleActions: "play reverse play reverse"
       },
-      x: 100,
+        x: isMobile ? 10 : 100,
       opacity: 0,
       duration: 1.2,
     });
@@ -54,11 +56,11 @@ function About() {
 
         {/* IMAGE */}
 
-        <div className="flex-1 about-image">
+        <div className="flex-1 about-image overflow-hidden">
           <img
             src="./H1.png"
             alt="Developer Workspace"
-            className="rounded-3xl shadow-2xl w-full max-w-lg mx-auto"
+            className="block w-full max-w-sm lg:max-w-lg mx-auto rounded-3xl shadow-2xl"
           />
         </div>
 

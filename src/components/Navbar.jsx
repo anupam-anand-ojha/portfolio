@@ -5,7 +5,7 @@ function Navbar() {
     <>
       {/* Desktop Navbar */}
     <div className="hidden md:block fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-120px)] max-w-7xl">
-  <div className="navbar flex item-center bg-white/10 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl px-6 py-3">
+  <div className="navbar flex items-center bg-white/10 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl px-6 py-3">
 
     
 
@@ -26,7 +26,7 @@ function Navbar() {
 
       {/* Mobile Navbar */}
 
-<div className="md:hidden navbar fixed top-0 left-0 z-50 w-full bg-white/10 backdrop-blur-xl border border-white/10 shadow-lg px-6 ">
+<div className="md:hidden navbar fixed top-0 left-0 z-50 w-full bg-white/10 backdrop-blur-xl border border-white/10 shadow-lg px-auto">
   <div className="flex-1 flex items-center justify-between">
 
     <a href="#home" className="text-2xl font-black">

@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Contact() {
   const container = useRef();
   const [result, setResult] = useState("");
+   const isMobile = window.innerWidth < 768;
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -22,6 +23,8 @@ function Contact() {
     });
 
     const data = await response.json();
+
+   
 
     setResult(
       data.success ? "Message Sent Successfully!" : "Something went Wrong!",
@@ -52,7 +55,7 @@ function Contact() {
           start: "top 80%",
           toggleActions: "play none none reverse",
         },
-        x: -40,
+         x: isMobile ? 15 : 40,
         opacity: 0,
         duration: 1,
         ease: "power2.out",
