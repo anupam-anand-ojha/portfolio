@@ -53,3 +53,9 @@ background:
   background-attachment: fixed;
 }
 
+@media (max-width: 767px) {
+  #root {
+    overflow-x: clip;
+  }
+}
+
