@@ -55,7 +55,7 @@ function Contact() {
           start: "top 80%",
           toggleActions: "play none none reverse",
         },
-         x: isMobile ? 15 : 40,
+         x: isMobile ? 0 : 40,
         opacity: 0,
         duration: 1,
         ease: "power2.out",

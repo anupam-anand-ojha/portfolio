@@ -17,7 +17,7 @@ function About() {
         start: "top 70%",
         toggleActions: "play reverse play reverse"
       },
-        x: isMobile ? 10 : 100,
+        x: isMobile ? 0 : 100,
       opacity: 0,
       duration: 1.2,
     });
