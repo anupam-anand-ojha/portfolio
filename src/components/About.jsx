@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 function About() {
   const aboutRef = useRef();
 
-  const isMobile = window.innerWidth < 768;
 
   useGSAP(() => {
     gsap.from(".about-image", {
@@ -17,7 +16,8 @@ function About() {
         start: "top 70%",
         toggleActions: "play reverse play reverse"
       },
-        x: isMobile ? 15 : 100,
+      
+       x: 80,
       opacity: 0,
       duration: 1.2,
     });
@@ -28,9 +28,9 @@ function About() {
         start: "top 70%",
        toggleActions: "play reverse play reverse"
       },
-      y: 60,
+      y: 99,
       opacity: 0,
-      duration: 1,
+      duration: 1.3,
     });
 
     gsap.from(".about-card", {
