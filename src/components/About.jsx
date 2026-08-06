@@ -33,6 +33,18 @@ function About() {
       duration: 1.3,
     });
 
+    gsap.from(".about-para", {
+       scrollTrigger: {
+         trigger: aboutRef.current,
+         start: "top 60%",
+         toggleActions: "play reverse play reverse"
+       },
+       y: 80,
+       opacity: 0,
+       duration: 0.8,
+       stagger: 0.2,
+     });
+
     gsap.from(".about-card", {
       scrollTrigger: {
         trigger: aboutRef.current,
@@ -56,7 +68,7 @@ function About() {
 
         {/* IMAGE */}
 
-        <div className="flex-1 about-image overflow-hidden">
+        <div className="hidden md:flex flex-1 about-image overflow-hidden">
           <img
             src="./H1.png"
             alt="Developer Workspace"
@@ -72,20 +84,20 @@ function About() {
             About Me
           </div>
 
-          <h1 className="text-5xl lg:text-6xl font-black leading-tight">
+          <h1 className=" text-5xl lg:text-6xl font-black leading-tight">
             Building Products,
             <br />
             Not Just Projects
           </h1>
 
-          <p className="py-8 text-lg text-base-content/70">
+          <p className="about-para py-8 text-lg text-base-content/70">
             I'm a Full Stack Developer focused on creating
             real-world applications that solve practical problems.
             I enjoy transforming ideas into complete digital
             products that users can actually use.
           </p>
 
-          <p className="pb-6 text-base-content/70">
+          <p className="about-para pb-6 text-base-content/70">
             My experience includes AI integrations,
             authentication systems, role-based access control,
             real-time communication using Socket.IO,
@@ -93,7 +105,7 @@ function About() {
             and deploying production-ready applications.
           </p>
 
-          <p className="pb-10 text-base-content/70">
+          <p className="about-para pb-10 text-base-content/70">
             Most of my learning comes from building projects.
             Whether it's Resumify, Muzeek or ChatBeez,
             I love turning ideas into scalable web experiences
