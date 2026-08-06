@@ -94,7 +94,7 @@ function Hero() {
       {/* Background */}
 
       <div className="absolute inset-0 -z-10 overflow-hidden md:block ">
-        <img className="absolute inset-0 w-full h-full object-cover object-[93%_center] scale-[0.77] origin-top translate-x-[12%] md:scale-100 md:translate-x-0 lg:scale-100 lg:translate-x-0 lg:origin-center lg:object-center" src="./Hero.jpg" alt="" />
+        <img className="absolute inset-0 w-full h-full object-cover object-[93%_center] scale-[0.77] origin-top translate-x-[12%] max-[430px]:scale-[0.58] max-[430px]:translate-x-[21%] md:scale-100 md:translate-x-0 lg:scale-100 lg:translate-x-0 lg:origin-center lg:object-center" src="./Hero.jpg" alt="" />
 
         {/* Overlay */}
 
@@ -114,7 +114,7 @@ function Hero() {
             Anupam
           </h1>
 
-          <h2 className="text-2xl lg:text-3xl font-semibold mt-6 lg:mt-4 mb-8 text-white/60">
+          <h2 className=" text-2xl lg:text-3xl font-semibold mt-6 lg:mt-4 mb-8 text-white/60">
             Full Stack Developer & AI Enthusiast
           </h2>
 
