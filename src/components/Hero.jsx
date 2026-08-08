@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 
 const handlesubmit = () => {
   window.open(
-    "https://drive.google.com/file/d/1HfItlh4C5HQ1F_Yhadl33wABQI3m_BIY/view?usp=sharing",
+    "https://drive.google.com/file/d/1yrd9_53hlFHyFJhwqVWuh8uM5nmmcw7i/view?usp=sharing",
     "_blank",
   );
 };
