@@ -51,6 +51,15 @@ function Projects() {
       github: "https://github.com/anupam-anand-ojha/ChatBeez-Frontend",
       live: "https://chatbeez.vercel.app",
     },
+    {
+  title: "ChefMate",
+  image: "/p4.png",
+  desc:
+    "AI-powered recipe application that generates personalized recipes based on your ingredients and preferences.",
+  tech: "React • Node.js • Express • LLM APIs",
+  github: "https://github.com/anupam-anand-ojha/chefMate-ai-frontend",
+  live: "https://chefmate-ai-two.vercel.app",
+},
   ];
 
   return (
