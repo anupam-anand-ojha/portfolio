@@ -29,7 +29,7 @@ function Projects() {
       image: "/p1.png",
       desc:
         "AI-powered resume builder that generates professional resumes from user inputs using AI integration.",
-      tech: "React • Node.js • MongoDB • Express • AI API",
+      tech: "React • Node.js • Express • AI API",
       github: "https://github.com/anupam-anand-ojha/resumify-ai-backend",
       live: "https://getresumify.vercel.app",
     },
