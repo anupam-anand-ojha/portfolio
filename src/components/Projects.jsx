@@ -38,7 +38,7 @@ function Projects() {
       title: "wanderSoul AI",
       image: "/p5.png",
       desc: "AI-powered travel planner that creates personalized trip itineraries based on your destination, budget, duration, interests, and travel preferences.",
-      tech: "React • Node.js • Express • MongoDB • Gemini AI",
+      tech: "React • Node.js • Express • LLM APIs",
       github: "https://github.com/anupam-anand-ojha/wanderSoul-ai-frontend",
       live: "https://wandersoul-ai.vercel.app",
     },
@@ -50,6 +50,14 @@ function Projects() {
       github: "https://github.com/anupam-anand-ojha/ChatBeez-Frontend",
       live: "https://chatbeez.vercel.app",
     },
+     {
+      title: "Muzeek",
+      image: "/p2.png",
+      desc: "Role-based music platform where artists upload songs and users enjoy seamless streaming.",
+      tech: "React • Express • MongoDB • JWT Auth",
+      github: "https://github.com/anupam-anand-ojha/muzeek-app-backend",
+      live: "https://playmuzeek.vercel.app",
+    },
     {
       title: "Resumify",
       image: "/p1.png",
@@ -58,14 +66,7 @@ function Projects() {
       github: "https://github.com/anupam-anand-ojha/resumify-ai-backend",
       live: "https://getresumify.vercel.app",
     },
-    {
-      title: "Muzeek",
-      image: "/p2.png",
-      desc: "Role-based music platform where artists upload songs and users enjoy seamless streaming.",
-      tech: "React • Express • MongoDB • JWT Auth",
-      github: "https://github.com/anupam-anand-ojha/muzeek-app-backend",
-      live: "https://playmuzeek.vercel.app",
-    },
+   
   ];
 
   return (
