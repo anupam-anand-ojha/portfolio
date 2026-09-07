@@ -8,27 +8,52 @@ gsap.registerPlugin(ScrollTrigger);
 function Projects() {
   const projectRef = useRef();
 
-  useGSAP(() => {
-    gsap.from(".projects-heading", {
-      scrollTrigger: {
-        trigger: ".projects-heading",
-        start: "top 80%",
-        toggleActions: "play reverse play reverse",
-      },
-      y: 60,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    });
-    
-  }, { scope: projectRef });
+  useGSAP(
+    () => {
+      gsap.from(".projects-heading", {
+        scrollTrigger: {
+          trigger: ".projects-heading",
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
+        },
+        y: 60,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+      });
+    },
+    { scope: projectRef },
+  );
 
   const projects = [
     {
+      title: "ChefMate",
+      image: "/p4.png",
+      desc: "AI-powered recipe application that generates personalized recipes based on your ingredients and preferences.",
+      tech: "React • Node.js • Express • LLM APIs",
+      github: "https://github.com/anupam-anand-ojha/chefMate-ai-frontend",
+      live: "https://chefmate-ai-two.vercel.app",
+    },
+    {
+      title: "wanderSoul AI",
+      image: "/p5.png",
+      desc: "AI-powered travel planner that creates personalized trip itineraries based on your destination, budget, duration, interests, and travel preferences.",
+      tech: "React • Node.js • Express • MongoDB • Gemini AI",
+      github: "https://github.com/anupam-anand-ojha/wanderSoul-ai-frontend",
+      live: "https://wandersoul-ai.vercel.app",
+    },
+    {
+      title: "ChatBeez",
+      image: "/p3.png",
+      desc: "Real-time chat application powered by Socket.IO with instant messaging capabilities.",
+      tech: "React • Node.js • Socket.IO • MongoDB",
+      github: "https://github.com/anupam-anand-ojha/ChatBeez-Frontend",
+      live: "https://chatbeez.vercel.app",
+    },
+    {
       title: "Resumify",
       image: "/p1.png",
-      desc:
-        "AI-powered resume builder that generates professional resumes from user inputs using AI integration.",
+      desc: "AI-powered resume builder that generates professional resumes from user inputs using AI integration.",
       tech: "React • Node.js • Express • AI API",
       github: "https://github.com/anupam-anand-ojha/resumify-ai-backend",
       live: "https://getresumify.vercel.app",
@@ -36,30 +61,11 @@ function Projects() {
     {
       title: "Muzeek",
       image: "/p2.png",
-      desc:
-        "Role-based music platform where artists upload songs and users enjoy seamless streaming.",
+      desc: "Role-based music platform where artists upload songs and users enjoy seamless streaming.",
       tech: "React • Express • MongoDB • JWT Auth",
       github: "https://github.com/anupam-anand-ojha/muzeek-app-backend",
       live: "https://playmuzeek.vercel.app",
     },
-    {
-      title: "ChatBeez",
-      image: "/p3.png",
-      desc:
-        "Real-time chat application powered by Socket.IO with instant messaging capabilities.",
-      tech: "React • Node.js • Socket.IO • MongoDB",
-      github: "https://github.com/anupam-anand-ojha/ChatBeez-Frontend",
-      live: "https://chatbeez.vercel.app",
-    },
-    {
-  title: "ChefMate",
-  image: "/p4.png",
-  desc:
-    "AI-powered recipe application that generates personalized recipes based on your ingredients and preferences.",
-  tech: "React • Node.js • Express • LLM APIs",
-  github: "https://github.com/anupam-anand-ojha/chefMate-ai-frontend",
-  live: "https://chefmate-ai-two.vercel.app",
-},
   ];
 
   return (
@@ -69,15 +75,10 @@ function Projects() {
       className="min-h-screen bg-base-100 py-24"
     >
       <div className="max-w-7xl mx-auto px-6">
-
         <div className="projects-heading text-center mb-16">
-          <div className="badge badge-primary badge-lg mb-6">
-            Projects
-          </div>
+          <div className="badge badge-primary badge-lg mb-6">Projects</div>
 
-          <h2 className="text-5xl lg:text-6xl font-black">
-            Featured Projects
-          </h2>
+          <h2 className="text-5xl lg:text-6xl font-black">Featured Projects</h2>
 
           <p className="mt-6 text-base-content/70">
             Some of the applications I've built.
@@ -103,9 +104,7 @@ function Projects() {
                   {project.title}
                 </h2>
 
-                <p className="text-white/70 leading-7">
-                  {project.desc}
-                </p>
+                <p className="text-white/70 leading-7">{project.desc}</p>
 
                 <div className="badge badge-outline mt-2 py-4 px-4">
                   {project.tech}
@@ -130,7 +129,6 @@ function Projects() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
