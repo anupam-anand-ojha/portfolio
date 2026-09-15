@@ -27,20 +27,20 @@ function Projects() {
 
   const projects = [
     {
-      title: "ChefMate",
-      image: "/p4.png",
-      desc: "AI-powered recipe application that generates personalized recipes based on your ingredients and preferences.",
-      tech: "React • Node.js • Express • LLM APIs",
-      github: "https://github.com/anupam-anand-ojha/chefMate-ai-frontend",
-      live: "https://chefmate-ai-two.vercel.app",
-    },
-    {
       title: "wanderSoul AI",
       image: "/p5.png",
       desc: "AI-powered travel planner that creates personalized trip itineraries based on your destination, budget, duration, interests, and travel preferences.",
       tech: "React • Node.js • Express • LLM APIs",
       github: "https://github.com/anupam-anand-ojha/wanderSoul-ai-frontend",
       live: "https://wandersoul-ai.vercel.app",
+    },
+    {
+      title: "ChefMate",
+      image: "/p4.png",
+      desc: "AI-powered recipe application that generates personalized recipes based on your ingredients and preferences.",
+      tech: "React • Node.js • Express • LLM APIs",
+      github: "https://github.com/anupam-anand-ojha/chefMate-ai-frontend",
+      live: "https://chefmate-ai-two.vercel.app",
     },
     {
       title: "ChatBeez",
