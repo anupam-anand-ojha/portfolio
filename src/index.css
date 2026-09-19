@@ -38,10 +38,6 @@
 }
 
 
-html{
-  scroll-behavior:smooth;
-}
-
 
 body {
 
@@ -59,3 +55,6 @@ background:
   }
 }
 
+html{
+  scroll-behavior:smooth;
+}
