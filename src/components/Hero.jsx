@@ -142,7 +142,7 @@ function Hero() {
             <div className="stat">
               <div className="stat-title">Featured Projects</div>
               <div className="stat-value text-primary text-3xl sm:text-4xl">
-                3+
+                6+
               </div>
               <div className="stat-desc">Production Ready Apps</div>
             </div>
