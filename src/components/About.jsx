@@ -119,7 +119,7 @@ function About() {
             <div className="card bg-white/10 backdrop-blur-xl border border-white/10  about-card">
               <div className="card-body">
                 <h3 className="font-bold text-2xl text-primary">
-                  3+
+                  6+
                 </h3>
                 <p>Featured Projects</p>
               </div>
