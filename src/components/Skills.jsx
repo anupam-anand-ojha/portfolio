@@ -33,6 +33,7 @@ function Skills() {
     "Render",
     "Vercel",
     "Gemini AI",
+    "UI/UX"
 
   ];
    const visibleSkills = showAll ? skills : skills.slice(0, 15);
